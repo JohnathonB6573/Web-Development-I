@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin-left: 0px;
+    padding-left: 10px;
+    border: 5px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* Designing all grid-items */
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* Grid Column */
+.left {
+    grid-column-start: 0;
+    grid-column-end: 1;
+}
+
+.middle {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/* Grid row */
+.right {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+/* Designing h1 element */
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+h2{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.headerL {
+    grid-column-start: 0;
+    grid-column-end: 1;
+}
+.headerR {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .success {background-color: #04AA6D;} /* Green */
+  .success:hover {background-color: #46a049;}
+  

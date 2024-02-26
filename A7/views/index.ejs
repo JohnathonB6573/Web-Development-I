@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 9 Johnathon Brumfield</title>
+    <link rel="stylesheet" href="CSS/myStyle.css">
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="/about.ejs">About</a>
+      <a href="https://modnr.maps.arcgis.com/apps/webappviewer/index.html?id=0cc1b6513d6e407694aede7b7bdbde93">Map</a>
+    </div>
+
+    <span onclick="openNav()"></span>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    </div>
+
+    <div class= "column">
+    <center>
+      <img src="IMG/img1.png" alt="img1">
+    
+    <p1><br>&emsp;The department’s Division of State Parks, known as Missouri
+      State Parks, works to protect and interpret the state’s most
+      outstanding natural and cultural resources while providing
+      recreational opportunities compatible with those resources. The
+      Missouri state park system was established in April 1917 and
+      includes 92 state parks and historic sites, totaling more than
+      150,000 acres. State historic sites commemorate events or
+      structures of statewide historical importance and honor people
+      of state and national importance. The system also includes
+      homes of famous Missourians, Civil War battlefields and
+      reminders of yesterday, such as gristmills and covered bridges.
+
+      <br>&emsp;Missouri was one of the first in the nation to establish the State
+      Historic Preservation Office in 1968 following the Historic
+      Preservation Act of 1966. The office helps facilitate the process
+      of identifying historic properties significant to the citizens, state
+      and nation, and planning for their preservation.
+
+      <br>&emsp; The division is also responsible for administering three federal
+      grant pass-through programs that provide financial assistance to
+      individuals, groups and public entities for a variety of outdoor
+      recreation and historic preservation purposes.
+
+      <br>&emsp;Every year, millions of people visit the state park system to hike,
+      camp, fish, discover the past and explore nature.</p1>
+    </center>
+    </div>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+  </body>
+</html>

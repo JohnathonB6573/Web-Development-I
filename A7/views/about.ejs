@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 9 Johnathon Brumfield</title>
+    <link rel="stylesheet" href="CSS/myStyle.css">
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.ejs">Home</a>
+      <a href="about.ejs">About</a>
+      <a href="https://modnr.maps.arcgis.com/apps/webappviewer/index.html?id=0cc1b6513d6e407694aede7b7bdbde93">Map</a>
+    </div>
+
+    <span onclick="openNav()"></span>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    </div>
+
+    <div class= "column">
+    <center>
+        <h1>ABOUT THE MISSOURI PARK SYSTEM</h1>
+        <img src="IMG/img2.jpg" alt="img1">
+        <p2>Missouri state parks and historic sites are administered by the Division
+            of State Parks, which is a part of the Missouri Department of Natural Resources. Its main responsibilities
+            are the administration of the Missouri state park system, and coordination of statewide programs in the
+            areas of outdoor recreation and trails.
+
+            <br>&emsp;The mission of the state park system is to preserve and interpret the state's most outstanding natural
+            landscapes and cultural landmarks, and to provide outstanding recreational opportunities compatible
+            with those resources. 
+        </p2>
+        <h1>THE MISSOURI PARK SYSTEM</h1>
+        <p2><br>&emsp;Missouri's state park system, which on multiple occasions has been ranked as one of the top four state
+            park systems in the nation, contains 93 state parks and historic sites plus the trails at Roger Pryor
+            Pioneer Backcountry. Within more than 160,000 acres available to the public, the state park system has
+            something to fit everyone's needs. The system includes homes of famous Missourians, Civil War
+            battlefields; and reminders of yesterday such as gristmills and covered bridges. The state's most
+            outstanding landscapes are preserved here for everyone's enjoyment - deep forests, glades, prairies and
+            blue streams and lakes.
+            <br>&emsp;To help visitors enjoy their stay, the system offers more than 2,000 structures, 3,500 campsites,
+            194 cabins, almost 2,000 picnic sites, and more than 1,000 miles of trail. These trails include
+            opportunities for hikers, backpackers, bicycle riders, off-road vehicle users and horseback riders. The
+            system boasts the longest developed rails-to-trail project in the nation: Katy Trail State Park. In 2016,
+            more than 20 million people visited to hike, camp, fish, discover the past and explore nature.
+            </p2>
+        <img src="IMG/img3.jpg" alt="img1">
+        <h1>FUNDING FOR THE STATE PARK</h1>
+        <p2><br>&emsp;The primary source of funding for the state park system is half of the dedicated constitutional tax of one-
+            tenth-of-one-percent Parks, Soils and Water Sales Tax, which provides about three-fourths of the
+            division's budget for operation and development of state parks. All additional funding comes from
+            revenues generated in the state park system and some federal funds.
+            <br>&emsp;The park, soils and water tax was created through a constitutional amendment and earmarked
+            specifically for the state park system and efforts to stop soil erosion. The tax was first approved by
+            voters in 1984, and has since been reapproved by voters four times, in 1988, 1996, 2006 and 2016. At
+            least two-thirds of voters approved the tax the last four times, showing how much Missouri voters
+            support their state park system.
+            </p2>
+    </center>
+    </div>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+  </body>
+</html>
